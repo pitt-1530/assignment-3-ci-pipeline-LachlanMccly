@@ -45,7 +45,7 @@ public class PlaylistRecommender {
         }
 
         for(char c: title.toCharArray()){
-            if(!Character.isletter(c) && c != ' '){
+            if(!Character.isLetter(c) && c != ' '){
                 return false;
             }
         }
