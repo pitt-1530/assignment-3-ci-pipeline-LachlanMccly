@@ -11,7 +11,7 @@ public class PlaylistRecommender {
             return "Rejection: list is null or empty";
         }
 
-        int sumpBPM = 0;
+        long sumpBPM = 0;
 
 
         for(Integer bpm : bpms){
@@ -30,8 +30,7 @@ public class PlaylistRecommender {
             return "LOW";
         }
         
-            return "empty";
-
+            
     }
 
     public static boolean isValidTrackTitle(String title) {
