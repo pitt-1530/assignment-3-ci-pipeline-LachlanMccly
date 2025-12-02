@@ -6,16 +6,62 @@ public class PlaylistRecommender {
 
     public static String classifyEnergy(List<Integer> bpms) {
         // TODO: Implement classifyEnergy()
-        throw new UnsupportedOperationException("Not implemented");
+        if(bpms == NULL || bpms.isEmpty()){
+            return "Rejection: list is null or empty";
+        }
+
+        int sumpBPM = 0;
+
+
+        for(Integer bpm : bpms){
+            sumpBPM+= bpm;
+        }
+
+        double avgBpm = (double) sumpBPM/ bmps.size();
+
+        if(avgBpm >=140){
+            return "HIGH";
+        }
+        else if(avgBpm>=100){
+            return "MEDIUM";
+        }
+        else{
+            return "LOW";
+        }
+        
+
+
     }
 
     public static boolean isValidTrackTitle(String title) {
         // TODO: Implement isValidTrackTitle()
-        throw new UnsupportedOperationException("Not implemented");
+        if(title == null){
+            return false;
+        }
+        int length = title.length();
+
+        if(length<1 || length>30){
+            return false;
+        }
+
+        for(char c: title.toCharArray()){
+            if(!Character.isletter(ch) && ch != ' '){
+                return false;
+            }
+        }
     }
+
+    return true;
 
     public static int normalizeVolume(int volumeDb) {
         // TODO: Implement normalizeVolume()
-        throw new UnsupportedOperationException("Not implemented");
+        if(volumeDb> 100){
+            return 100;
+        }
+        else if(volumeDb<0){
+            return 0;
+        }
+
+        return volumeDb;
     }
 }
