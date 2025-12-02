@@ -14,7 +14,7 @@ public class PlaylistRecommender {
         long sumpBPM = 0;
 
 
-        for(Integer bpm : bpms){
+        for( int bpm : bpms){
             sumpBPM+= bpm;
         }
 
