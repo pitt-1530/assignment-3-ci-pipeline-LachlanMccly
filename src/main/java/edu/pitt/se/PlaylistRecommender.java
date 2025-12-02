@@ -6,7 +6,7 @@ public class PlaylistRecommender {
 
     public static String classifyEnergy(List<Integer> bpms) {
         // TODO: Implement classifyEnergy()
-        if(bpms == NULL || bpms.isEmpty()){
+        if(bpms == null || bpms.isEmpty()){
             return "Rejection: list is null or empty";
         }
 
