@@ -49,9 +49,10 @@ public class PlaylistRecommender {
                 return false;
             }
         }
+        return true;
     }
 
-    return true;
+    
 
     public static int normalizeVolume(int volumeDb) {
         // TODO: Implement normalizeVolume()
