@@ -30,7 +30,7 @@ public class PlaylistRecommender {
             return "LOW";
         }
         
-
+            return "empty";
 
     }
 
