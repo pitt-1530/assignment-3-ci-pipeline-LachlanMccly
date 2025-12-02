@@ -17,7 +17,7 @@ public class PlaylistRecommender {
             sumpBPM+= bpm;
         }
 
-        double avgBpm = (double) sumpBPM/ bmps.size();
+        double avgBpm = (double) sumpBPM/ bpms.size();
 
         if(avgBpm >=140){
             return "HIGH";
@@ -45,7 +45,7 @@ public class PlaylistRecommender {
         }
 
         for(char c: title.toCharArray()){
-            if(!Character.isletter(ch) && ch != ' '){
+            if(!Character.isletter(c) && c != ' '){
                 return false;
             }
         }
