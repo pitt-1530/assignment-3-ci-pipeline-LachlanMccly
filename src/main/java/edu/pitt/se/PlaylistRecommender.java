@@ -11,10 +11,10 @@ public class PlaylistRecommender {
             return "Rejection: list is null or empty";
         }
 
-        long sumpBPM = 0;
+        int sumpBPM = 0;
 
 
-        for( int bpm : bpms){
+        for(Integer bpm : bpms){
             sumpBPM+= bpm;
         }
 
